@@ -4,6 +4,22 @@ All notable changes to the NeuroFamily Support Ecosystem will be documented in t
 
 ---
 
+## [1.2.0] — 2026-03-03
+
+### Added
+- **SETUP_GUIDE.md** — Complete installation and configuration guide
+  - OpenClaw installation instructions
+  - OpenRouter free model recommendations
+  - MiniMax budget options
+  - Token usage estimates
+  - Which files to customize
+  - USER.md walkthrough
+
+### Updated
+- **README.md** — Added setup reference
+
+---
+
 ## [1.1.0] — 2026-03-03
 
 ### Added

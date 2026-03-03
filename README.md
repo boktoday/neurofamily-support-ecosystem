@@ -33,6 +33,8 @@ NeuroFamily is a network of specialized AI agents, each designed to help with a 
 
 ## 🏠 Getting Started
 
+> ⚠️ **IMPORTANT:** Before using the system, you MUST fill in the USER.md file.
+
 ### 1. Set Up Your Family Profile
 
 Each family has a `USER.md` file in the Family Navigator folder. Fill this in with:
@@ -54,6 +56,15 @@ Each specialist agent has their own workspace with:
 - **SOUL.md** — Their personality, voice, values
 - **AGENTS.md** — Operating rules and frameworks
 - **TOOLS.md** — Templates, resources, and guides
+
+---
+
+## 🛠️ Quick Start
+
+1. **Install OpenClaw** — See [SETUP_GUIDE.md](SETUP_GUIDE.md)
+2. **Clone the repo** — Into your OpenClaw agents folder
+3. **Fill in USER.md** — This is critical! See below
+4. **Start chatting** — Begin with the Family Navigator
 
 ---
 
