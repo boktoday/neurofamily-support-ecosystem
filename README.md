@@ -156,3 +156,9 @@ Open for use, adaptation, and sharing. Built with care.
 ---
 
 *NeuroFamily Support Ecosystem — Built with love for families who deserve support that actually supports them.* 🌸
+
+---
+
+**Created by:** Brendan O'Keefe  
+**Date:** February 2026  
+**AI Orchestrator Training:** https://aiorchestrator.com.au

@@ -299,3 +299,9 @@ openclaw agents list
 ---
 
 *Questions? Open an issue on GitHub or ask in the Discord!*
+
+---
+
+**Created by:** Brendan O'Keefe  
+**Date:** February 2026  
+**AI Orchestrator Training:** https://aiorchestrator.com.au
