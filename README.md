@@ -176,3 +176,40 @@ Open for use, adaptation, and sharing. Built with care.
 **Created by:** Brendan O'Keefe  
 **Date:** February 2026  
 **AI Orchestrator Training:** https://aiorchestrator.com.au
+
+---
+
+## ⚠️ Disclaimer & Terms of Use
+
+**IMPORTANT: READ BEFORE USING**
+
+### Disclaimer
+
+The NeuroFamily Support Ecosystem is an **AI-powered support tool**, not a replacement for professional medical, therapeutic, or educational advice.
+
+- **Not a medical device** — This system does not diagnose, treat, or cure any condition
+- **Not a qualified professional** — AI assistants have limitations; always consult doctors, therapists, specialists, and educators for clinical decisions
+- **Information only** — Content provided is for informational purposes only
+- **Accuracy not guaranteed** — While we strive for accuracy, AI can make mistakes; verify critical information independently
+- **Crisis support** — This system is not a crisis service. If you or someone you know is in crisis, contact emergency services or a crisis helpline immediately
+
+### Terms of Use
+
+- **Personal/family use only** — This system is designed for personal family use
+- **Commercial use** — Contact the creator for commercial licensing
+- **Modification allowed** — Feel free to adapt for your family's needs
+- **No warranty** — This system is provided "as is" without warranties of any kind
+- **Liability limitation** — The creator is not liable for any damages arising from use of this system
+
+### Safety First
+
+If at any time you or your family are in crisis, please contact:
+
+- **Emergency:** 000 (Australia) / 911 (US/UK) / your local emergency number
+- **Beyond Blue (AU):** 1300 22 4636
+- **Samaritans (UK):** 116 123
+- **Crisis Text Line (US):** Text HOME to 741741
+
+---
+
+*By using this system, you acknowledge that you have read, understood, and agree to this disclaimer and terms of use.*
