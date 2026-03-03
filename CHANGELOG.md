@@ -4,6 +4,18 @@ All notable changes to the NeuroFamily Support Ecosystem will be documented in t
 
 ---
 
+## [1.3.0] — 2026-03-04
+
+### Added
+- **Telegram setup guide** — Individual bots, group chats, multiple bots for different agents
+- **WhatsApp setup guide** — Business API and QR linking options
+- **Discord setup** — Best for teen families
+- **Channel comparison table** — Telegram vs WhatsApp vs Discord
+- **Recommended setups by family type** — Single parent, two-parent, teen-focused, extended family
+- **Privacy considerations** — What's visible in each platform
+
+---
+
 ## [1.2.0] — 2026-03-03
 
 ### Added

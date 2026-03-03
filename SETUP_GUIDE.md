@@ -137,9 +137,227 @@ openclaw config edit
 }
 ```
 
-### 3. Set Up Channels (Optional)
+### 3. Set Up Channels
 
-You can connect Telegram, WhatsApp, Discord, etc. See [OpenClaw Docs](https://docs.openclaw.ai).
+You can connect NeuroFamily to Telegram, WhatsApp, Discord, and other messaging platforms. Here's how:
+
+---
+
+## Part 3b: Connect to Messaging Platforms
+
+### Option A: Telegram 🌟 Most Popular
+
+Telegram is the easiest platform to set up. You can use it in two ways:
+
+#### Method 1: Individual Bot (One Family Member)
+
+1. **Create a Telegram Bot**
+   - Open Telegram and message @BotFather
+   - Send `/newbot` and follow the prompts
+   - Copy your **Bot API Token**
+
+2. **Configure OpenClaw**
+   ```bash
+   openclaw channels add telegram
+   ```
+   - Enter your Bot API Token when prompted
+   - Set as direct (not group)
+
+3. **Start Chatting**
+   - Search for your bot username
+   - Send `/start` to begin
+
+**Best for:** Private conversations between your family and NeuroFamily
+
+---
+
+#### Method 2: Group Chat (Whole Family)
+
+1. **Create a Group**
+   - Create a new Telegram group
+   - Add your family members
+   - Add the bot to the group
+
+2. **Configure for Group**
+   ```bash
+   openclaw channels add telegram
+   ```
+   - Enter your Bot API Token
+   - Set as **group** mode
+
+3. **How It Works**
+   - Everyone in the family can chat with NeuroFamily
+   - Tag the bot: `@yourbot help`
+   - Useful for family coordination
+
+**Best for:** Family-wide communication, multiple caregivers
+
+---
+
+#### Method 3: Multiple Bots (Different Specialists)
+
+You can set up different bots for different agents:
+
+| Bot Name | Agent | Use Case |
+|----------|-------|----------|
+| @FamilyNavigatorBot | Family Navigator | General support, triage |
+| @ParentSupportBot | Parent Companion | Caregiver wellbeing |
+| @FoodCoachBot | Food Support Coach | Meal planning, ARFID |
+| @EducationBot | Education Advocate | School support |
+
+**Setup:**
+- Create separate bots via @BotFather
+- Configure each as a different agent in OpenClaw
+- Assign each bot to a specific agent
+
+---
+
+### Option B: WhatsApp
+
+WhatsApp is popular but requires more setup:
+
+#### Method 1: WhatsApp Business API (Official)
+
+1. **Create WhatsApp Business Account**
+   - Go to [business.facebook.com](https://business.facebook.com)
+   - Create a Meta App
+   - Add WhatsApp product
+
+2. **Get Credentials**
+   - Phone Number ID
+   - Access Token
+   - Verify your phone number
+
+3. **Configure OpenClaw**
+   ```bash
+   openclaw channels add whatsapp
+   ```
+   - Enter your credentials
+   - Set up webhook URL
+
+**Pros:** Official, reliable, supports rich messages  
+**Cons:** Requires Meta developer account, phone verification
+
+---
+
+#### Method 2: WhatsApp QR Linking (Personal)
+
+1. **Generate QR Code**
+   ```bash
+   openclaw whatsapp login
+   ```
+
+2. **Scan with Phone**
+   - Open WhatsApp on your phone
+   - Go to Settings → Linked Devices
+   - Scan the QR code
+
+3. **You're Connected!**
+   - Your personal WhatsApp is now linked
+   - Works like the Telegram individual bot
+
+**Pros:** No business account needed, free  
+**Cons:** Phone must stay online, personal number visible
+
+**Best for:** Personal family use without business setup
+
+---
+
+### Option C: Discord (Best for Teens)
+
+If your teen prefers Discord:
+
+1. **Create a Discord Bot**
+   - Go to [discord.com/developers](https://discord.com/developers)
+   - Create Application → Bot
+   - Copy the **Token**
+
+2. **Invite the Bot**
+   - Generate an invite link
+   - Add to your server
+
+3. **Configure OpenClaw**
+   ```bash
+   openclaw channels add discord
+   ```
+   - Enter your bot token
+   - Set channel permissions
+
+**Best for:** Teens who already live on Discord
+
+---
+
+### Option D: Other Platforms
+
+| Platform | Setup Difficulty | Best For |
+|----------|-----------------|----------|
+| **Slack** | Medium | Work-from-home families |
+| **Signal** | Hard | Privacy-focused families |
+| **Microsoft Teams** | Medium | Business + family |
+| **Google Chat** | Easy | Google ecosystem users |
+| **iMessage** | Hard | Apple-only households |
+| **Matrix** | Medium | Privacy, self-hosted |
+
+See [OpenClaw Channels Docs](https://docs.openclaw.ai/channels) for full setup.
+
+---
+
+### Channel Comparison
+
+| Feature | Telegram | WhatsApp | Discord |
+|--------|----------|----------|---------|
+| **Setup Ease** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ |
+| **Group Chat** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| **Privacy** | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ |
+| **Rich UI** | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| **Bot Creation** | ⭐⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐⭐ |
+| **Voice** | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+
+---
+
+### Recommended Setup for Families
+
+**Single Parent / Small Family:**
+- Telegram Individual Bot → Simple, private
+
+**Two-Parent + Kids:**
+- Telegram Group → Everyone included
+- Or WhatsApp Personal → Already familiar
+
+**Teen-Focused:**
+- Discord Server → Natural for teens
+
+**Extended Family / Care Team:**
+- Multiple Telegram bots → Different agents for different needs
+
+---
+
+### Testing Your Connection
+
+```bash
+# Check channel status
+openclaw channels status
+
+# Send a test message
+openclaw channels test telegram
+```
+
+Then start chatting:
+
+> "Hi! This is our family. We have a child named [name] who is [age]. Our main challenge is [priority]."
+
+NeuroFamily will read your USER.md and respond tailored to your family!
+
+---
+
+### ⚠️ Important: Privacy Considerations
+
+- **Telegram:** Bot username is public, but chats are private
+- **WhatsApp:** Personal number visible to the bot
+- **Discord:** Messages visible to everyone in the server
+- **Group chats:** Consider what family info is shared in groups
+
+**Tip:** For sensitive discussions, use direct messages (individual bots), not group chats.
 
 ---
 
