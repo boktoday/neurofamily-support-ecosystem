@@ -1,6 +1,21 @@
 # 🚀 NeuroFamily Setup Guide
 
-This guide walks you through setting up the NeuroFamily Support Ecosystem with OpenClaw.
+This guide walks you through setting up the NeuroFamily Support Ecosystem with **OpenClaw**.
+
+---
+
+## What is OpenClaw?
+
+**OpenClaw** is a personal AI assistant you run on your own devices. It answers you on the channels you already use:
+
+- **Messaging:** WhatsApp, Telegram, Slack, Discord, Google Chat, Signal, iMessage, Microsoft Teams, WebChat
+- **Extension Channels:** BlueBubbles, Matrix, Zalo, Zalo Personal
+- **Voice:** Speaks and listens on macOS/iOS/Android
+- **Canvas:** Renders a live, interactive Canvas you control
+
+The Gateway is just the control plane — the product is the assistant itself.
+
+**NeuroFamily** is designed as a drop-in agent system for OpenClaw. Install it once, and your family has access to a complete support team through any channel you use.
 
 ---
 

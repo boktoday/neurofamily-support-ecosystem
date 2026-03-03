@@ -6,7 +6,21 @@ A multi-agent AI system designed to support families raising neurodiverse childr
 
 ## 🎯 What Is This?
 
-NeuroFamily is a network of specialized AI agents, each designed to help with a specific aspect of neurodiverse family life. Think of it as having a multidisciplinary support team in your pocket — available on-demand, never tired, and always consistent.
+NeuroFamily is a network of specialized AI agents, designed to be installed as an **OpenClaw** personal AI assistant.
+
+**What is OpenClaw?**
+OpenClaw is a personal AI assistant you run on your own devices. It answers you on the channels you already use:
+
+- **Messaging:** WhatsApp, Telegram, Slack, Discord, Google Chat, Signal, iMessage, Microsoft Teams, WebChat
+- **Extension Channels:** BlueBubbles, Matrix, Zalo
+- **Voice:** Speaks and listens on macOS/iOS/Android
+- **Canvas:** Renders a live, interactive Canvas you control
+
+The Gateway is just the control plane — the product is the assistant itself.
+
+**NeuroFamily** is designed as a drop-in agent system for OpenClaw. Install it once, and your family has access to a complete support team through any channel you use.
+
+---
 
 **The Family Navigator** is your main point of contact. It knows your family's unique profile and routes you to the right specialist agents when needed.
 
