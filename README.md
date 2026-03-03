@@ -6,7 +6,7 @@ A multi-agent AI system designed to support families raising neurodiverse childr
 
 ## 🎯 What Is This?
 
-NeuroFamily is a network of specialized AI agents, designed to be installed as an **OpenClaw** personal AI assistant.
+NeuroFamily is a network of specialized AI agents, designed to be installed as an **[OpenClaw](https://openclaw.ai/)** personal AI assistant.
 
 **What is OpenClaw?**
 OpenClaw is a personal AI assistant you run on your own devices. It answers you on the channels you already use:

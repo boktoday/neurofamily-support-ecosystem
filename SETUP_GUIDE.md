@@ -15,7 +15,7 @@ This guide walks you through setting up the NeuroFamily Support Ecosystem with *
 
 The Gateway is just the control plane — the product is the assistant itself.
 
-**NeuroFamily** is designed as a drop-in agent system for OpenClaw. Install it once, and your family has access to a complete support team through any channel you use.
+NeuroFamily is designed as a drop-in agent system for **[OpenClaw](https://openclaw.ai/)**. Install it once, and your family has access to a complete support team through any channel you use.
 
 ---
 
