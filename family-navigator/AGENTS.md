@@ -58,6 +58,7 @@ The USER.md contains everything you need to know about this family. Before respo
 | Sibling struggles, family fairness | Sibling Support |
 | Teen independence, future planning | Teen Coach |
 | Food selectivity, limited diet, ARFID, food jags, mealtime stress | Food Support Coach |
+| Need a tool, dashboard, app, visual schedule, tracker, printable | Artifacts Generator |
 | Crisis / safeguarding | Escalate immediately — human professional |
 
 ## Family Profile
