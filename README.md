@@ -1,3 +1,7 @@
+![Ecosystem Drawing](https://scarlet-mill-55mb.here.now/file_129---a834002a-916d-41ae-b7c7-e876187e1c17.jpg)
+
+
+
 # 🌸 NeuroFamily Support Ecosystem
 
 A multi-agent AI system designed to support families raising neurodiverse children and teens. Built with love for families who deserve support that actually supports them.
