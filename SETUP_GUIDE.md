@@ -27,7 +27,161 @@ NeuroFamily is designed as a drop-in agent system for **[OpenClaw](https://openc
 
 ---
 
-## Part 1: Choose Your AI Provider
+## Part 1b: Local AI with LMStudio (Advanced Option)
+
+**Want to run AI completely offline on your own computer?** You can use LMStudio with local models instead of cloud APIs.
+
+### What is LMStudio?
+
+**LMStudio** is a free desktop app that lets you run large language models (LLMs) locally on your Mac or PC.
+
+- **100% Private** — No data leaves your computer
+- **No Internet Required** — Works offline
+- **No API Costs** — One-time download
+- **Free Models** — Many available
+
+### Getting Started with LMStudio
+
+#### 1. Download LMStudio
+
+```bash
+# Visit the website
+https://lmstudio.ai/
+
+# Download for your OS:
+# - macOS (Apple Silicon or Intel)
+# - Windows
+# - Linux
+```
+
+#### 2. Download a Model
+
+In LMStudio:
+
+1. Click **🔍 Discover** in the sidebar
+2. Search for recommended models (see below)
+3. Click **Download**
+4. Wait for download to complete
+
+#### 3. Recommended Models
+
+| Model | Size | RAM Needed | Best For |
+|-------|------|------------|----------|
+| **Qwen 2.5 9B** | ~18GB | 16GB+ RAM | 🌟 Best overall |
+| **Qwen 2.5 14B** | ~28GB | 32GB+ RAM | More capable |
+| **Llama 3.2 3B** | ~6GB | 8GB+ RAM | Fast, less RAM |
+| **Mistral 7B** | ~14GB | 16GB+ RAM | Good balance |
+| **Phi-3.5 4B** | ~8GB | 8GB+ RAM | Lightweight |
+
+**🌟 Recommended: Qwen 2.5 9B**
+- Excellent reasoning for multi-agent coordination
+- Fits in 16GB RAM
+- Good context window
+- Free, open weights
+
+#### 4. Run the Model
+
+1. Click **💬 Chat** in sidebar
+2. Select your downloaded model
+3. Adjust settings:
+   - **Context Length:** 8192 (or higher if supported)
+   - **GPU Offload:** Max (uses your graphics card)
+   - **Threads:** Match your CPU cores
+
+### Connecting LMStudio to OpenClaw
+
+#### Option A: Local API Server (Recommended)
+
+1. In LMStudio, click **🧠 Server** in sidebar
+2. Check **Enable Server**
+3. Note the port (default: 1234)
+4. Configure OpenClaw:
+
+```bash
+openclaw config edit
+```
+
+Add:
+
+```json
+{
+  "model": "local/qwen-2.5-9b",
+  "provider": "lmstudio",
+  "baseUrl": "http://localhost:1234/v1"
+}
+```
+
+#### Option B: Ollama (Alternative)
+
+If LMStudio doesn't work for you, try **Ollama**:
+
+```bash
+# Install Ollama
+brew install ollama  # macOS
+# or
+winget install ollama.ollama  # Windows
+
+# Pull a model
+ollama pull qwen2.5:9b
+
+# It runs on port 11434 by default
+```
+
+Configure OpenClaw:
+
+```json
+{
+  "model": "qwen2.5:9b",
+  "provider": "ollama",
+  "baseUrl": "http://localhost:11434"
+}
+```
+
+### LMStudio vs Cloud: Which to Choose?
+
+| Feature | LMStudio (Local) | OpenRouter (Cloud) |
+|---------|------------------|---------------------|
+| **Cost** | Free (after download) | Pay for API |
+| **Privacy** | 100% private | Data goes to cloud |
+| **Internet** | Works offline | Needs internet |
+| **Setup** | More complex | Easy |
+| **Speed** | Fast (your hardware) | Depends on connection |
+| **Quality** | Good for size | Can use bigger models |
+
+### System Requirements
+
+| Model Size | Minimum RAM | Recommended |
+|------------|-------------|-------------|
+| 3B | 8GB | 12GB |
+| 7B | 16GB | 24GB |
+| 9B | 16GB | 32GB |
+| 14B | 32GB | 64GB |
+
+**Tip:** More RAM = bigger models = better performance
+
+### Hardware Recommendations
+
+| Use Case | Setup |
+|----------|-------|
+| **Light use** | 16GB RAM, any modern CPU |
+| **Regular use** | 32GB RAM, modern CPU |
+| **Power user** | 64GB+ RAM, discrete GPU (NVIDIA) |
+
+### Troubleshooting LMStudio
+
+**Model won't load:**
+- Not enough RAM — try smaller model
+- Close other apps to free RAM
+
+**Slow responses:**
+- Increase GPU offload in settings
+- Reduce context length
+- Try smaller model
+
+**Can't connect:**
+- Check port in LMStudio server settings
+- Ensure firewall allows localhost
+- Try http://127.0.0.1 instead of localhost
 
 ### Option A: OpenRouter (Free Models) 🌟 Recommended
 

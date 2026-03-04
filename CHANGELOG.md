@@ -4,6 +4,17 @@ All notable changes to the NeuroFamily Support Ecosystem will be documented in t
 
 ---
 
+## [1.4.0] — 2026-03-04
+
+### Added
+- **Shared Context Layer** — Cross-agent memory system (CHILD_SUMMARY.md, ACTIVE_CONCERNS.md, SHARED_NOTES.md, AGENT_COORDINATION.md, FAMILY_CALENDAR.md)
+- **Regional Support** — Country-specific resources (Australia, UK, US)
+- **Profile Builder** — Automated onboarding questionnaire for families
+- **LMStudio Integration** — Local AI option with Qwen 2.5 9B and other models
+- **Local Models Guide** — Complete setup for offline AI
+
+---
+
 ## [1.3.0] — 2026-03-04
 
 ### Added
